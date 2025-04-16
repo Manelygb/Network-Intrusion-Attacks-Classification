@@ -11,7 +11,7 @@ The system combines machine learning techniques with real network traffic data t
 - WPA2 Key Cracking (approximated using proxy modeling)
 - DDoS attacks (Layer 3/4)
 
-Each attack is addressed in a separate notebook. The repository includes dataset preprocessing, model training, evaluation, and supporting analysis.
+Each notebook treats a dataset that corresponds to one or more of the attacks. The repository includes dataset preprocessing, model training, evaluation, and supporting analysis.
 
 ---
 
@@ -26,35 +26,8 @@ Each attack is addressed in a separate notebook. The repository includes dataset
 ├── DDoS_Zeek_Model.ipynb
 📂 data/
 └── [Place downloaded datasets here]
-requirements.txt
 README.md
 ```
-
----
-
-## 🔧 Setup Instructions
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/Manelygb/Network-Intrusion-Attacks-Classification.git
-cd Network-Intrusion-Attacks-Classification
-```
-
-2. Create a virtual environment (optional but recommended):
-
-```bash
-python -m venv env
-source env/bin/activate   # On Windows: env\Scripts\activate
-```
-
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Create a folder named `data/` and place all datasets in it.
 
 ---
 
@@ -110,52 +83,9 @@ pip install -r requirements.txt
 
 ---
 
-## 📦 Requirements
-
-Install dependencies using:
-
-```bash
-pip install -r requirements.txt
-```
-
-Required packages include:
-- Python 3.8+
-- pandas, numpy
-- scikit-learn
-- matplotlib, seaborn
-- jupyter
-
----
-
 ## 🧠 Project Notes
 
 - Models were selected based on interpretability, performance, and real-time compatibility.
 - All models use the Random Forest algorithm for fast and accurate classification.
 - Separate models were created for full dataset training and live-capture scenarios.
 
----
-
-## 🔗 Useful Links
-
-- 📄 Full Project Report: _[Add PDF or Overleaf link here]_
-- 📊 Data Folder: Place raw datasets in `/data/`
-- 📂 Notebooks: Available in `/notebooks/`
-
----
-
-## 🤝 Contributors
-
-This project was developed by:
-
-- Yagoub Manel  
-- Mers Wafaa  
-- Cheboui Imene  
-- Ikhlef Lyna  
-- Salamani Amine  
-- Chellal Abdelhack
-
----
-
-## 📃 License
-
-This repository is for academic use only. Licensing terms can be added here.
